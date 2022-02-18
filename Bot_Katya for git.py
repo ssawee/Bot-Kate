@@ -91,8 +91,8 @@ while True:
                             if e['type']=='wall':
                                 vk.messages.send(chat_id=chat_id, attachment=attachment, random_id=random_id)
                     else:
-                         message=random.choice(['мм, хуета','ебать привет','каво','кавоооооо','скипай','скипай нахуй','ну и дерьмо','ливай','го в академ',
-                                                ':)','эта важна','ВАЖНО!','не прочитаешь - тебе пизда','шо','шоооооо','че тебе надо','иди своей дорогой, стакер',
+                         message=random.choice(['мм','о привет','каво','кавоооооо','скипай','скипааай','ну и да','ливай','го в академ',
+                                                ':)','эта важна','ВАЖНО!','не прочитаешь - будет плохо','шо','шоооооо','че тебе надо','иди своей дорогой, стакер',
                                                 'ну и зачем это здесь?','а?','a?!','aaaaaaaaaaaaaaaa','!?','а я говорил, вам это не надо','ы'])
                          #Триггер на пересланные сообщения/запись на стене (ответ - текст)
                          if event.object.fwd_messages:
@@ -120,7 +120,7 @@ while True:
                 if event.object.text:
                     response=event.object.text.lower()
                     if response=='да':
-                        vk.messages.send(chat_id=chat_id, message='пизда', random_id=random_id+1)
+                        vk.messages.send(chat_id=chat_id, message='балда', random_id=random_id+1)
                         vk.messages.send(chat_id=chat_id, message=')', random_id=random_id+2) 
                     if response=='бот, неделя' or response=='/неделя' or response=='/week':
                         whatWeek()
